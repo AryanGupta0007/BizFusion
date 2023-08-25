@@ -13,7 +13,6 @@ def user_login(request):
         except Exception as error:
             return HttpResponseRedirect(request, "registration/signup.html")
         else:
-
             user = authenticate(username=username, password=password)
             if user is not None:
                 login(request, user)
