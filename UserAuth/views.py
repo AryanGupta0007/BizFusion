@@ -47,3 +47,4 @@ def user_signup(request):
                 return HttpResponseRedirect(reverse("signup"))
 
     return render(request, "registration/signup.html")
+
